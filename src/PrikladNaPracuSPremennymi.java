@@ -1,3 +1,6 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class PrikladNaPracuSPremennymi {
 
 //    Vypíšte do konzoly nasledujúci text:
@@ -7,15 +10,18 @@ public class PrikladNaPracuSPremennymi {
 //    Poznámka: Dátum narodenia, známku a rok + aktuálny dátum nastavte tak, aby sa dali meniť v zdrojovom kóde (t.j. cez premenné).
 //
     public static void main(String[] args) {
+
         String datumNar = "3.4.2000";
         float znamka = 2;
         int rok = 2022;
         String meno = " Jozef Mrkvička";
-        String aktDatum = "8.6.2023";
+
+        Date dnesnyDatum = new Date();
+        SimpleDateFormat formatDatumu = new SimpleDateFormat("dd.MM.yyyy");
 
         System.out.println("Študent"+meno + "sa narodil "+datumNar + ", z maturitnej skúšky má známku "+znamka+"a od septembra"+rok+" nastúpi do nového zamestnania ako Java programator.");
         System.out.println();
-        System.out.println("V Bratislave dňa "+aktDatum);
+        System.out.println("V Bratislave dňa "+formatDatumu.format(dnesnyDatum));
 
     }
 
