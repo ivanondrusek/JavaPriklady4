@@ -12,24 +12,25 @@ import java.util.Scanner;
 
 public class PriradenieZnamky {
     public static void main(String[] args) {
-        double percento=99;
+        double percento = 99;
 
         Scanner sc = new Scanner(System.in);
-        while (percento != 0)
-        {
-        percento = sc.nextDouble();
-        System.out.println(percentoDoZnamkyChar(percento));
+        while (percento != 0) {
+            percento = sc.nextDouble();
+            System.out.println(percentoDoZnamkyChar(percento));
         }
 
     }
 
-    public static  String percentoDoZnamkyChar(double parPercento) {
+    public static String percentoDoZnamkyChar(double parPercento) {
         if (parPercento < 65)
             return "F";
-        else if (parPercento > 65 && parPercento< 75 ) {
-            return "C";}
-            else if (parPercento > 75 &&  parPercento< 90) {
-                return "B";}
-                    else {return "A";}
-}
+        else if (parPercento > 65 && parPercento < 75) {
+            return "C";
+        } else if (parPercento > 75 && parPercento < 90) {
+            return "B";
+        } else {
+            return "A";
+        }
+    }
 }

@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class PrikladNaPracuSPremennymi {
 
-//    Vypíšte do konzoly nasledujúci text:
+    //    Vypíšte do konzoly nasledujúci text:
 //
 //    Študent Jozef Mrkvička sa narodil 03.04.2000, z maturitnej skúšky má známku 1.5 a od septembra 2022 nastúpi do nového zamestnania ako Java programátor.
 //    V Bratislave dňa 18.06.2022
@@ -21,9 +21,9 @@ public class PrikladNaPracuSPremennymi {
         Date dnesnyDatum = new Date();
         SimpleDateFormat formatDatumu = new SimpleDateFormat("dd.MM.yyyy");
 
-        System.out.println("Študent"+meno + "sa narodil "+datumNar + ", z maturitnej skúšky má známku "+znamka+"a od septembra"+rok+" nastúpi do nového zamestnania ako Java programator.");
+        System.out.println("Študent" + meno + "sa narodil " + datumNar + ", z maturitnej skúšky má známku " + znamka + "a od septembra" + rok + " nastúpi do nového zamestnania ako Java programator.");
         System.out.println();
-        System.out.println("V Bratislave dňa "+formatDatumu.format(dnesnyDatum));
+        System.out.println("V Bratislave dňa " + formatDatumu.format(dnesnyDatum));
 
     }
 

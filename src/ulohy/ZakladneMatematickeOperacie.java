@@ -34,50 +34,45 @@ public class ZakladneMatematickeOperacie {
         double delenie = cislo1/cislo2;
         double modulo = cislo1%cislo2;*/
 
-        switch (operacia){
+        switch (operacia) {
             case "+":
-                System.out.printf("Výsledkom sčítania hodnôt %.2f a %.2f je : %.2f ",cislo1,cislo2,scitanie(cislo1,cislo2));
+                System.out.printf("Výsledkom sčítania hodnôt %.2f a %.2f je : %.2f ", cislo1, cislo2, scitanie(cislo1, cislo2));
                 break;
             case "-":
-                System.out.println("Výsledkom odčítania hodnôt "+cislo1+"a "+cislo2+" je : "+odcitanie(cislo1,cislo2));
+                System.out.println("Výsledkom odčítania hodnôt " + cislo1 + "a " + cislo2 + " je : " + odcitanie(cislo1, cislo2));
                 break;
             case "*":
-                System.out.println("Výsledkom násobenia hodnôt "+cislo1+"a "+cislo2+" je : "+nasobenie(cislo1,cislo2));
+                System.out.println("Výsledkom násobenia hodnôt " + cislo1 + "a " + cislo2 + " je : " + nasobenie(cislo1, cislo2));
                 break;
             case "/":
-                System.out.println("Výsledkom delenia hodnôt "+cislo1+"a "+cislo2+" je : "+delenie(cislo1,cislo2));
+                System.out.println("Výsledkom delenia hodnôt " + cislo1 + "a " + cislo2 + " je : " + delenie(cislo1, cislo2));
                 break;
             case "%":
-                System.out.println("Výsledkom modula hodnôt "+cislo1+"a "+cislo2+" je : "+modulo(cislo1,cislo2));
+                System.out.println("Výsledkom modula hodnôt " + cislo1 + "a " + cislo2 + " je : " + modulo(cislo1, cislo2));
                 break;
         }
 
 
-
-    }
-    public static  double scitanie(double parCislo1, double parCislo2)
-    {
-        return parCislo1+parCislo2;
     }
 
-    public static  double odcitanie(double parCislo1, double parCislo2)
-    {
-        return parCislo1-parCislo2;
+    public static double scitanie(double parCislo1, double parCislo2) {
+        return parCislo1 + parCislo2;
     }
 
-    public static  double nasobenie(double parCislo1, double parCislo2)
-    {
-        return parCislo1*parCislo2;
+    public static double odcitanie(double parCislo1, double parCislo2) {
+        return parCislo1 - parCislo2;
     }
 
-    public static  double delenie(double parCislo1, double parCislo2)
-    {
-        return parCislo1/parCislo2;
+    public static double nasobenie(double parCislo1, double parCislo2) {
+        return parCislo1 * parCislo2;
     }
 
-    public static  double modulo(double parCislo1, double parCislo2)
-    {
-        return parCislo1%parCislo2;
+    public static double delenie(double parCislo1, double parCislo2) {
+        return parCislo1 / parCislo2;
+    }
+
+    public static double modulo(double parCislo1, double parCislo2) {
+        return parCislo1 % parCislo2;
     }
 }
 // TODO prerobiť na 1 metodu ktora dostane vsetko a priamo spraví výsleodk
