@@ -23,7 +23,7 @@ Na základe zadanej množiny vstupných hodnôt vypíše zodpovedajúce slová p
 
  */
 
-import java.lang.reflect.Array;
+
 import java.util.Scanner;
 
 public class FizzBuzz {
@@ -40,8 +40,8 @@ public static void main(String[]args){
     vyber = sc.nextInt();
 
 
-
     if (vyber == 1){
+
         int[] zoznam = new int[30];
         naplnPole(zoznam);
         vypisFizzBuZZ(zoznam);
@@ -100,4 +100,6 @@ public static void main(String[]args){
             parPole[i]= sc.nextInt();
         }
     }
+
+
 }
